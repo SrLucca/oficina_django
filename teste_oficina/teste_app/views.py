@@ -7,8 +7,11 @@ from .models import Post
 def Base(request):
     return render(request, 'paginas/home.html')#render sempre recebe primeiro o request depois o template
 
+def About(request):
+    return render(request, 'paginas/about.html')
+
 def Page(request):
-    posts = Post.objects.all()
+    posts = Post.objects.all().order_by('-created_at')
     return render(request, 'paginas/index.html', {'posts': posts})
 
 def Postview(request, id):
