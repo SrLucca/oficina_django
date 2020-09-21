@@ -1,4 +1,4 @@
-{%load static%} <!--vai rodar o css e js-->
+{% load static %} <!--vai rodar o css e js-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +23,7 @@
                     <a class="nav-link" href="index.html">Posts</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Usuários</a>
+                    <a class="nav-link" href="#">Portifólio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Sobre nós</a>
@@ -31,13 +31,14 @@
                 </ul>
             </div>
           </nav>
-       
+          
+          <img src="{% static 'img/home.png' %}" height="500px" width="100%" alt="">
             {% block content %} <!--herança-->
             {% endblock %}
       
             
         <footer>
-            <p>HoraDeCodar ToDo</p>
+            <p>Oficina Django</p>
         </footer>
     </div>
     
