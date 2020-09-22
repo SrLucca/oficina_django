@@ -7,13 +7,16 @@
 <div class="offset-1 col-10 list-div">
     <h1>Posts</h1>
     <div class="col-9 search-div">
-        <input class="form-control" type="text" id="search" name="search" placeholder="Digite o nome do post para buscar">
-        <i class="fas fa-search"></i>
+        <form method="GET" id="search-form"> <!--UTILIZADO NAS BUSCAS-->        
+            <input class="form-control" type="text" id="search" name="search" placeholder="Digite o nome do post para buscar">
+            <i class="fas fa-search" id="search-btn"></i>
+        </form>
+
     </div>
     <ul class="task-list">
         {% for post in posts %} <!--para aparecer as tarefas do banco de dados no site-->
         <li class="task-item">
-            <h1><a href="/post/{{post.id}}">{{post.title}}</a></h1> <!--task.tudo que estiver na classe-->
+            <h1><a href="/post/{{post.id}}">{{post.title}}</a></h1> <!--task.tudo que estiver na classe--> <!--post.id = gerar nova pagina com id do post-->
             <span>{{post.summary|safe}}</span>
         {% endfor %}
     </ul>
