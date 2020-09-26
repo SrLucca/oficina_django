@@ -37,6 +37,12 @@
     right: 26px;
 }
 
+#search-btn{
+    text-decoration: none;
+    background-color: #fff;
+    border: none;
+}
+
 .search-div{
     padding: 0px;
     margin-top: 15px;
