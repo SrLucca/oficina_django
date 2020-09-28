@@ -115,20 +115,11 @@
     padding: 0; /*tira configurações do navegador e bootstrap*/
 }
 
-.list-div2 .done_doing{
-    color: green;
-    font-size: 1.4rem;
-    border: 2px solid grey;
-    border-radius: 1.6rem;
-    width: fit-content;
-    font-weight: bolder;
-}
-
-.task-list {
+.post-list {
     padding-left: 0;
 }
 
-.task-item{
+.post-item{
     list-style: none;
     font-size: 20px;
     padding-top: 10px;
@@ -136,7 +127,7 @@
     text-decoration: none;
 }
 
-.task-item a{
+.post-item a{
     font-size: 2.0rem;
     text-decoration: none;
     color: #333;
