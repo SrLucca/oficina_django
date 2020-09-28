@@ -109,7 +109,7 @@
 }
 
 
-/*Lista de tarefas*/
+/*Lista de Posts*/
 
 .list-div{
     padding: 0; /*tira configurações do navegador e bootstrap*/
@@ -133,20 +133,6 @@
     color: #333;
 }
 
-.fas.fa-trash, .fas.fa-edit {
-    cursor: pointer;
-    margin: 5px;
-    font-size: 20px;
-    float: right;
-}
-
-.fas.fa-trash{
-    color: #db1e47;
-}
-
-.fas.fa-edit{
-    color: #13c43f;
-}
 
 /*RODAPÉ*/
 
