@@ -5,7 +5,7 @@ from django.core.paginator import Paginator
 from .models import Post
 # Create your views here.
 
-def Base(request):
+def Base(request): #request = requisição
     return render(request, 'paginas/home.html')#render sempre recebe primeiro o request depois o template
 
 def About(request):
