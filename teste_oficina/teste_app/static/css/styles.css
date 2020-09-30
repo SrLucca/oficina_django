@@ -28,6 +28,17 @@
     letter-spacing: 1px;
 }
 
+/*NAVBAR MOBILE*/
+.navbar-toggler{
+    margin-right: 6.5rem;
+}
+
+.navbar-toggler a{
+    color: #333;
+    text-decoration: none;
+    align-items: center;
+    padding: 0 30px;
+}
 
 /*Search*/
 
