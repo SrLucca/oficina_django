@@ -23,7 +23,7 @@ def Page(request):
         posts_list = Post.objects.all().order_by('-created_at') #mostar os posts
         paginator = Paginator(posts_list,len(posts_list)) #Dê ao Paginator uma lista de objetos, mais o número de itens que você gostaria de ter em cada página, e ele fornece métodos para acessar os itens de cada página
         page = request.GET.get('page') #tentando alcançar aqui é encontrar o valor para a chave 'página' fornecida
-        posts = paginator.get_page(page) # "refresh" na pagina com o resultado da busca
+        posts = paginator.get_page(page) # mostrar o resultado obtido no paginator
 
     return render(request, 'paginas/index.html', {'posts': posts})
 
