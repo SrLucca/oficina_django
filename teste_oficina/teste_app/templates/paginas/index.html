@@ -7,11 +7,10 @@
             <input class="form-control" type="text" id="search" name="search" placeholder="Digite o nome do post para buscar">
             <button class="fas fa-search" id="search-btn"></button>
         </form>
-
     </div>
-    <ul class="task-list">
+    <ul class="post-list">
         {% for post in posts %} <!--para aparecer as tarefas do banco de dados no site-->
-        <li class="task-item">
+        <li class="post-item">
             <h1><a href="/post/{{post.id}}">{{post.title}}</a></h1> <!--task.tudo que estiver na classe--> <!--post.id = gerar nova pagina com id do post-->
             <span>{{post.summary|safe}}</span>
         {% endfor %}
