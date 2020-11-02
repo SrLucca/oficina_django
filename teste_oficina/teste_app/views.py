@@ -28,6 +28,7 @@ def Page(request):
     return render(request, 'paginas/index.html', {'posts': posts})
 
 
+
 def Postview(request, id):
     post = get_object_or_404(Post, pk=id)#recebe o model e o id
     return render(request,'paginas/post.html', {'post': post})

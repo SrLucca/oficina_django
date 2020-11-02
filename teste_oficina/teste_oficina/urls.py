@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from teste_app import views
+from register import views
 from django.conf.urls.static import static
 from django.conf import settings
 
@@ -23,5 +24,7 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('teste_app.urls')), #Including another URLconf
+    path('register/', views.registerhome, name='register'),
+    path('user/', views.userpage, name='user'),
     path('ckeditor/',include('ckeditor_uploader.urls')),
 ]+static(settings.MEDIA_URL)

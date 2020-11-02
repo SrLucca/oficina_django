@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'teste_app',
     'ckeditor',
-    'ckeditor_uploader'
+    'register.apps.RegisterConfig',
+    'crispy_forms',
+    'ckeditor_uploader',
 ]
 
 MIDDLEWARE = [
@@ -126,3 +128,5 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
 CKEDITOR_UPLOAD_PATH = 'uploads/'
+
+CRISPY_TEMPLATE_PACK = "bootstrap4"

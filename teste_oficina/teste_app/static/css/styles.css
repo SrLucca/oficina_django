@@ -145,6 +145,18 @@
 }
 
 
+/*LOGIN*/
+
+.links-navbar a{
+    color: #333;
+}
+
+
+.auth-card{
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
 /*RODAPÉ*/
 
 footer{
