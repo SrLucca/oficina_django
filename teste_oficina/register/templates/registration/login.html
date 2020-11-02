@@ -1,0 +1,15 @@
+{%extends 'base.html'%}
+{% load crispy_forms_tags %}
+
+
+{%block content%}
+    <div class="container">
+        <h1> Login</h1>
+        <form class="form-group" method="post">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <button type="submit" class="btn btn-success">Login</button>
+            <p>Se você não possui uma conta, <a href="/register">CRIE UMA</a></p>
+        </form>
+    </div>
+{%endblock%}

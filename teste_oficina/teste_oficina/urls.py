@@ -26,5 +26,6 @@ urlpatterns = [
     path('', include('teste_app.urls')), #Including another URLconf
     path('register/', views.registerhome, name='register'),
     path('user/', views.userpage, name='user'),
+    path('', include('django.contrib.auth.urls')),
     path('ckeditor/',include('ckeditor_uploader.urls')),
 ]+static(settings.MEDIA_URL)
