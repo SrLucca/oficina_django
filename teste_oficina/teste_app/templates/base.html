@@ -20,8 +20,7 @@
                         </label>
 
                         {%if user.is_authenticated%}
-                            <a href="/logout">Logout</a>
-                            <a href="/user">Perfil</a>
+
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav mr-auto">
                                     <li class="nav-item">
@@ -33,8 +32,13 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="/about.html">Sobre nós</a>
                                     </li>
+                                    <ul>
+                                        <li class="links-navbar" style="list-style-type: none;">
+                                            <a href="/logout">Logout</a>
+                                            <a href="/user">Perfil</a>
+                                        </li>
+                                    </ul>
                                 </ul>
-                                <ul>
                         {%else%}
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
@@ -49,7 +53,7 @@
                                   </li>
                               </ul>
                               <ul>
-                                  <li class="links-navbar" style="list-style-type: none;">
+                                    <li class="links-navbar" style="list-style-type: none;">
                                       <a  href="/register">Registrar</a>
                                       <a  href="/login">Login</a>
                                     </li>
